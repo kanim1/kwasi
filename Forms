@@ -1,0 +1,148 @@
+<form action="#" method="post" enctype="multipart/form-data">
+ 
+<table width="960" border="0" cellspacing="2" cellpadding="0">
+<tr>
+<td height="127" colspan="4" align="center"><h2>REGISTER NEW MEMBER</h2><hr/></td>
+</tr>
+<tr>
+<td height="36">ID:</td>
+<td><input type="submit" name="generate" id="button" value="Generate ID" /> <input name="id" type="text"
+value="<?php if(isset($generate_password)){echo $generate_password;}?>" readonly="readonly" id="ronlyid" /></td>
+<td>Place of Birth:</td>
+<td><label for="textfield3"></label>
+<input type="text" name="bplace" id="textfield" /></td>
+</tr>
+<tr>
+<td height="40">First Name:</td>
+<td><input type="text" name="fname" id="textfield" /></td>
+<td>Region:</td>
+<td><label for="select10"></label>
+<select name="bregion" id="textfield">
+<option value="Eastern">Eastern</option>
+<option value="Western">Western</option>
+<option value="Greater Accra">Greater Accra</option>
+<option value="Northern">Northern</option>
+<option value="Upper East">Upper East</option>
+<option value="Upper West">Upper West</option>
+<option value="Central">Central</option>
+<option value="Brong Ahafo">Brong Ahafo</option>
+<option value="Volta">Volta</option>
+<option value="Ashante">Ashante</option>
+</select></td>
+</tr>
+<tr>
+<td height="39">Last Name:</td>
+<td><input type="text" name="lname" id="textfield" /></td>
+<td>Home Town:</td>
+<td><label for="textfield4"></label>
+<input type="text" name="hometown" id="textfield" /></td>
+</tr>
+<tr>
+<td height="47">Other Name:</td>
+<td><input type="text" name="oname" id="textfield" /></td>
+<td>Home Phone:</td>
+<td><label for="textfield5"></label>
+<input type="text" name="homephone" id="textfield" /></td>
+</tr>
+<tr>
+<td>Marital Status</td>
+<td><select name="mstatus" id="textf">
+<option value="Married">Married</option>
+<option value="Divorce">Divorce</option>
+</select>&nbsp;&nbsp;
+Gender &nbsp;&nbsp;
+<select name="gender" id="textf">
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select></td>
+<td>Mobile:</td>
+<td><label for="textfield6"></label>
+<input type="text" name="mobile" id="textfield" /></td>
+</tr>
+<tr>
+<td height="38">Communicant:</td>
+<td><label for="select3"></label>
+<select name="communicant" id="textf">
+<option value="Yes">yes</option>
+</select>
+&nbsp;&nbsp;Proffession:&nbsp;&nbsp;
+<label for="select4"></label>
+<select name="proffession" id="textf">
+<option value="Banker">Banker</option>
+<option value="Teacher">Teacher</option>
+<option value="Programmer">Programmer</option>
+</select></td>
+<td>Work Phone:</td>
+<td><label for="textfield3"></label>
+<input type="text" name="wphone" id="textfield" /></td>
+</tr>
+<tr>
+<td height="42">Day Born:</td>
+<td><label for="select5"></label>
+<select name="dayborn" id="textf">
+<option value="Monday">Monday</option>
+<option value="Tuesday">Tuesday</option>
+<option value="Wednesday">Wednesday</option>
+<option value="Thursday">Thursday</option>
+<option value="Friday">Friday</option>
+</select>&nbsp;&nbsp;</td>
+<td>Email:</td>
+<td><label for="textfield3"></label>
+<input type="text" name="email" id="textfield" /></td>
+</tr>
+<tr>
+<td height="47">Date Joined:</td>
+<td>
+<input type="text" name="djoined" id="date2" />
+</label></td>
+<td>Facebook:</td>
+<td><label for="textfield3"></label>
+<input type="text" name="facebook" id="textfield" /></td>
+</tr>
+<tr>
+<td height="46">Membership By:</td>
+<td><label for="select9">
+<select name="mby" id="textf">
+<option value="Birth">Birth</option>
+</select>
+Title: &nbsp;&nbsp;
+<select name="titles" id="textf">
+<option value="Miss">Miss</option>
+<option value="Mr">Mr</option>
+</select>
+</label></td>
+<td>Twitter:</td>
+<td><label for="textfield3"></label>
+<input type="text" name="twitter" id="textfield" /></td>
+</tr>
+<tr>
+<td height="45">Date of Birth:</td>
+<td><input type="text" name="dbirth" id="date1" /></td>
+<td>Emergency Name:</td>
+<td><label for="textfield3"></label>
+<input type="text" name="ename" id="textfield" /></td>
+</tr>
+<tr>
+<td height="35">Employer:</td>
+<td><label for="textfield2"></label>
+<input type="text" name="employer" id="textfield" /></td>
+<td>Emergency Contact:</td>
+<td><label for="textfield3"></label>
+<input type="text" name="econtact" id="textfield" /></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Image:</td>
+<td><label for="select11"></label>
+<input type="file" name="image" id="textfield" /></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><input type="submit" name="send" id="button" value="Save" /></td>
+</tr>
+</table>
+ 
+</form>
