@@ -1,0 +1,17 @@
+<?php
+//NB: CONNECTION STRING MUST BE ON EACH PAGE ELSE IT WILL THROW AN EXCEPTION
+ 
+//Use the Require_once statement on each page if your connection string is in a deferent file eg. below
+ 
+/*
+<?php require_once('Connections/eb.php'); ?>
+*/
+ 
+ 
+$hostname_eb = "localhost";//Put in your hosname
+$database_eb = "eb";// Put in your database name here
+$username_eb = "root";// The username to the Database that you are using
+$password_eb = "";//Put in you password if there is one
+$eb = mysql_pconnect($hostname_eb, $username_eb, $password_eb) or trigger_error(mysql_error(),E_USER_ERROR);
+mysql_select_db($database_eb, $eb);
+?>
