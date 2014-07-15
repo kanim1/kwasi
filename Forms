@@ -146,3 +146,39 @@ Title: &nbsp;&nbsp;
 </table>
  
 </form>
+
+<?php
+//NB tHE NAMES GIVEN to the textboxes in the Form is needed here to link
+if (isset($_POST['send']))
+{
+$memberid=$_POST['id'];
+$fname=$_POST['fname'];
+$lname=$_POST['lname'];
+$oname=$_POST['oname'];
+$title=$_POST['titles'];
+$gender=$_POST['gender'];
+$communicant=$_POST['communicant'];
+$mstatus=$_POST['mstatus'];
+$dayborn=$_POST['dayborn'];
+$proffession=$_POST['proffession'];
+$dbirth=$_POST['dbirth'];
+$employer=$_POST['employer'];
+$bplace=$_POST['bplace'];
+$bregion=$_POST['bregion'];
+$hometown=$_POST['hometown'];
+$homephone=$_POST['homephone'];
+$mobile=$_POST['mobile'];
+$wphone=$_POST['wphone'];
+$email=$_POST['email'];
+$facebook=$_POST['facebook'];
+$twitter=$_POST['twitter'];
+$ename=$_POST['ename'];
+$econtact=$_POST['econtact'];
+$mby=$_POST['mby'];
+$datejoined=$_POST['djoined'];
+ 
+mysql_query("insert into member (memberid,fname,lname,oname,title,gender,communicant,mstatus,dayborn,proffession,dbirth,employer,bplace,bregion,hometown,homephone,mobile,wphone,email,facebook,twitter,ename,econtact,mby,datejoined)values('$memberid','$fname','$lname','$oname','$title','$gender','$communicant','$mstatus','$dayborn','$proffession','$dbirth','$employer','$bplace','$bregion','$hometown','$homephone','$mobile','$wphone','$email','$facebook','$twitter','$ename','$econtact','$mby','$datejoined')")or die(mysql_error());
+ 
+ 
+}
+?>
